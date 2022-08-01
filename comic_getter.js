@@ -1,9 +1,6 @@
 let pg = getParamater("pg");
 
-const lastComic = "3";
 const firstComic = "1";
-
-if (pg === null) { pg = lastComic; }
 
 const pgData = {
 	"1": {
@@ -17,9 +14,33 @@ const pgData = {
 	"3": {
 		title: "<h1>weirdness - 1</h1>",
 		content: '<img src="comics/weirdness_1.png" title="you wouldn\'t believe it, but the narrator\'s actually narrating"/>'
+	},
+	"4": {
+		title: "<h1>weirdness - 2</h1>",
+		content: '<img src="comics/weirdness_2.png" title="early installment weirdness 2/commentary(you have believed it)"/>'
+	},
+	"5": {
+		title: "<h1>weirdness - 3</h1>",
+		content: '<img src="comics/weirdness_3.png" title="early installment weirdness 3/commentary(you are the narrator.)"/>'
+	},
+	"6": {
+		title: "<h1>weirdness - 4</h1>",
+		content: '<img src="comics/weirdness_4.png" title="early installment weirdness 4/commentary(the character has made a conscious choice to be depicted with color)"/>'
+	},
+	"7": {
+		title: "<h1>weirdness - 5</h1>",
+		content: '<img src="comics/weirdness_5.png" title="early installment weirdness 5/commentary()"/>'
 	}
 };
 
+var _lastComic = 1;
+while (_lastComic + 1 in pgData) {
+	_lastComic = _lastComic + 1;
+}
+
+const lastComic = _lastComic.toString();
+
+if (pg === null) { pg = lastComic; }
 
 function writePage() {
 	if (!(pgData[pg] === undefined || pgData[pg] == null)) {
