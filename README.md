@@ -5,8 +5,6 @@ it's a webcomic, and it's meta. Like, very meta.
 
 Please stop reading this document now.
 
-REMEMBER to run `python3 build.py` before committing.
-
 ---
 #
 ---
