@@ -21,7 +21,7 @@ lastComic = int(glo.lastComic)
 
 
 def path_to_comic(comic: int):
-  return "/" + str(comic) + ".html"
+  return "/" + str(comic)
 
 
 def resolve(var: str, context: dict, fullpath: str):
