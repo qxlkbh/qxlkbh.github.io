@@ -81,7 +81,7 @@ const pgData = {
 	},
 	"20": {
 		title: "<h1>canonicity court part 2</h1>",
-		content: '<img src="comics/canoncourt_2.png" title="Maybe you could even get the part of the comic Andrew didn't fill in, while we're at it!"/>'
+		content: '<img src="comics/canoncourt_2.png" title="Maybe you could even get the part of the comic Andrew didn\'t fill in, while we\'re at it!"/>'
 	},
 	"21": {
 		title: "<h1>canonicity court part 3</h1>",
