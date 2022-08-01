@@ -11,11 +11,9 @@
 <body style="background-color:#fefefe;">
   <a href="/house"> <img src="qxlkbh.png" /></a>
   <p>the comic with a tagline that is this tagline</p>
-  <div id="title"> {{ setup.title }} </div>
-  <div id="topNav"> {{ dynamic.navbar }} </div>
-  <div id="showComic"> {{ setup.content }} </div>
-  <div id="extra"> {{ getattr(setup, "extra", "") }} </div>
-  <!-- <script src="comic_getter.js"></script> -->
+  <h1>bees</h1>
+  welcome to the qxlkbh house page
+  <h2><a href="/faq">faq</a></h2>
 </body>
 
 </html>

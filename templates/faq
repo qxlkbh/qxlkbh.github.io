@@ -9,18 +9,21 @@
 </head>
 
 <body style="background-color:#fefefe;">
-  <img src="qxlkbh.png" />
+  <a href="/house"> <img src="qxlkbh.png" /></a>
   <p>the comic with a tagline that is this tagline</p>
-   <h1>Info and stuff</h1>
-  <p>qxlkbh is a webcomic which is for the most part very meta; it's an example of metafiction. Most of the humor is derived from self-reference. The authors are some of the most commonly occurring characters.</p>
+  <h1>Info and stuff</h1>
+  <p>qxlkbh is a webcomic which is for the most part very meta; it's an example of metafiction. Most of the humor is
+    derived from self-reference. The authors are some of the most commonly occurring characters.</p>
   <br />
   <p>the authors include: <br />
-  Moooosey (also "musija" or "musi"), who has way too many interests and is consequently an amateur linguist, mathematician, and composer <br />
-  <!-- Andrew, who PLACEHOLDER <br /> -->
-  <!-- PlanetN9ne, who PLACEHOLDER <br /> -->
-  <!-- Sonata, who PLACEHOLDER <br /> -->
-  <!-- Dandan, who PLACEHOLDER <br /> --> </p>
-   <h1>FAQ</h1>
+    Moooosey (also "musija" or "musi"), who has way too many interests and is consequently an amateur linguist,
+    mathematician, and composer <br />
+    <!-- Andrew, who PLACEHOLDER <br /> -->
+    <!-- PlanetN9ne, who PLACEHOLDER <br /> -->
+    <!-- Sonata, who PLACEHOLDER <br /> -->
+    <!-- Dandan, who PLACEHOLDER <br /> -->
+  </p>
+  <h1>FAQ</h1>
   <h2>Q: How do I pronounce "qxlkbh"</h2>
   <p>A: [qxlkbh], in ipa. Sorry.</p>
 </body>
