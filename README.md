@@ -32,8 +32,7 @@ Please stop reading this document now.
 
 ```
 python3 build.py
-cd build
-python3 -m http.server 8080
+python3 localtest.py
 ```
 
 YO DEVS
