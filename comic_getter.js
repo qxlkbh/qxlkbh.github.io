@@ -37,11 +37,11 @@ const pgData = {
 	},
 	"9": {
 		title: "<h1>title drop</h1>",
-		content: '<img src="comics/unknown.png" title="Rrrrollcredit-- we\'re not a movie, we can\'t get slack from Cinema Sins. And no, you can\'t hear how the doctor said qxlkbh, it\'s through text."/>'
+		content: '<img src="comics/title_drop.png" title="Rrrrollcredit-- we\'re not a movie, we can\'t get slack from Cinema Sins. And no, you can\'t hear how the doctor said qxlkbh, it\'s through text."/>'
 	},
 	"10": {
 		title: "<h1>qxlkbh title</h1>",
-		content: '<img src="comics/unknown2.png" title="Title text."/>'
+		content: '<img src="comics/file_name.png" title="Title text."/>'
 	},
 	"11": {
 		title: "<h1>killing off for real</h1>",
@@ -110,7 +110,7 @@ const pgData = {
 	"27": {
 		title: "<h1>lookalikes</h1>",
 		content: '<img src="comics/qxlkbh27.png" title=" If anyone else ever did a gag like this, don\'t tell us. We want to think this one\'s original. - Narrator"/>'
-	}
+	},
 
 
 
