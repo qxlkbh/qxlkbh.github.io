@@ -29,27 +29,27 @@ const pgData = {
 	},
 	"7": {
 		title: "<h1>weirdness - 5</h1>",
-		content: '<img src="comics/weirdness_5.png" title="early installment weirdness 5/commentary()"/>'
+		content: '<img src="comics/weirdness_5.png" title="I\'m legitimately worried that fanservice-obsessed cueball is going to become a proper recurring character. I better do something about that."/>'
 	},
 	"8": {
 		title: "<h1>beat panels</h1>",
-		content: '<img src="comics/beatpanels.png" title=""/>'
+		content: '<img src="comics/beatpanels.png" title="This is one of the few times I\'m actually going to copy-paste content twixt panels"/>'
 	},
 	"9": {
 		title: "<h1>title drop</h1>",
-		content: '<img src="comics/unknown.png" title=""/>'
+		content: '<img src="comics/unknown.png" title="Rrrrollcredit-- we\'re not a movie, we can\'t get slack from Cinema Sins. And no, you can\'t hear how the doctor said qxlkbh, it\'s through text."/>'
 	},
 	"10": {
 		title: "<h1>qxlkbh title</h1>",
-		content: '<img src="comics/unknown2.png" title=""/>'
+		content: '<img src="comics/unknown2.png" title="Title text."/>'
 	},
 	"11": {
 		title: "<h1>killing off for real</h1>",
-		content: '<img src="comics/killing_off_for_real.png" title=""/>'
+		content: '<img src="comics/killing_off_for_real.png" title="and I was only one day from retiring :("/>'
 	},
 	"12": {
 		title: "<h1>the third author</h1>",
-		content: '<img src="comics/the-third-author.png" title=""/>'
+		content: '<img src="comics/the-third-author.png" title="The arms are just giant space elevators. This in fact makes the puppets canonically bigger than the Earth"/>'
 	}
 };
 
