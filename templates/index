@@ -6,15 +6,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="1; url=/{{ glo.lastComic }}.html">
+  <meta http-equiv="refresh" content="1; url=/{{ glo.lastComic }}">
 
   <script>
-    window.location.href = "/{{ glo.lastComic }}.html"
+    window.location.href = "/{{ glo.lastComic }}"
   </script>
 </head>
 
 <body style="background-color:#fefefe;">
-  <img src="qxlkbh.png" />
+  <a href="/house"> <img src="qxlkbh.png" /></a>
   <p>the comic with a tagline that is this tagline</p>
   <div id="title"></div>
   <div id="topNav"></div>
