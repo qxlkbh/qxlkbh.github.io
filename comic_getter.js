@@ -37,11 +37,11 @@ const pgData = {
 	},
 	"9": {
 		title: "<h1>title drop</h1>",
-		content: '<img src="comics/unknown.png" title="Rrrrollcredit-- we\'re not a movie, we can\'t get slack from Cinema Sins. And no, you can\'t hear how the doctor said qxlkbh, it\'s through text."/>'
+		content: '<img src="comics/title_drop.png" title="Rrrrollcredit-- we\'re not a movie, we can\'t get slack from Cinema Sins. And no, you can\'t hear how the doctor said qxlkbh, it\'s through text."/>'
 	},
 	"10": {
 		title: "<h1>qxlkbh title</h1>",
-		content: '<img src="comics/unknown2.png" title="Title text."/>'
+		content: '<img src="comics/file_name.png" title="Title text."/>'
 	},
 	"11": {
 		title: "<h1>killing off for real</h1>",
@@ -50,67 +50,67 @@ const pgData = {
 	"12": {
 		title: "<h1>the third author</h1>",
 		content: '<img src="comics/the-third-author.png" title="The arms are just giant space elevators. This in fact makes the puppets canonically bigger than the Earth"/>'
-	}
+	},
 	"13": {
 		title: "<h1>proof</h1>",
 		content: '<img src="comics/proof.png" title="In this paper, we endeavor to prove that since all the trillions of numbers tested so far support the collatz conjecture, it must be true, as p\<0.05..."/>'
-	}
+	},
 	"14": {
 		title: "<h1>background music</h1>",
 		content: '<img src="comics/background music.png" title="IT\'S NOT MY FAULT DIES IRAE IS ASSOCIATED WITH DEATH"/>'
-	}
+	},
 	"15": {
 		title: "<h1>panel power</h1>",
 		content: '<img src="comics/panelpower.png" title="The spear is in front of la croix in the second panel. Decide what this means yourself."/>'
-	}
+	},
 	"16": {
 		title: "<h1>the brick joke</h1>",
 		content: '<img src="comics/brickjoke.png" title="The person who got hit is fine. They\'ll be back within the decade."/>'
-	}
+	},
 	"17": {
 		title: "<h1>translation errs (guest comic, by Digin)</h1>",
 		content: '<img src="comics/translationerrs.png" title="Check out https://pastebin.com/py8sWm4Y, but manataqmi hunt\'asqachu. Also, this text is important now! "/>'
-	}
+	},
 	"18": {
 		title: "<h1>canonicity court part 1</h1>",
 		content: '<img src="comics/canoncourt_1.png" title="They also forgot about that case when they were trying themselves."/>'
-	}
+	},
 	"19": {
 		title: "<h1>interlude</h1>",
-		//content: '<img src="comics/interlude.png" title="a narrator will be with you shortly."/>'
-	}
+		content: '<img src="comics/interlude.png" title="a narrator will be with you shortly."/>'
+	},
 	"20": {
 		title: "<h1>canonicity court part 2</h1>",
-		content: '<img src="comics/canoncourt_2.png" title="Maybe you could even get the part of the comic Andrew didn't fill in, while we're at it!"/>'
-	}
+		content: '<img src="comics/canoncourt_2.png" title="Maybe you could even get the part of the comic Andrew didn\'t fill in, while we\'re at it!"/>'
+	},
 	"21": {
 		title: "<h1>canonicity court part 3</h1>",
 		content: '<img src="comics/canoncourt_3.png" title="this being nine panels long is totally not just so that I can steal the \"most panels in a comic\" record from andrew. - musija"/>'
-	}
+	},
 	"22": {
 		title: "<h1>canonicity court part 4</h1>",
 		content: '<img src="comics/canoncourt_4.png" title="And the Law of Conservation of Detail strikes again! Nice play, fivecurls. - Narrator"/>'
-	}
+	},
 	"23": {
 		title: "<h1>canonicity court part 5</h1>",
 		content: '<img src="comics/canoncourt_5.png" title="PLACEHOLDER"/>'
-	}
+	},
 	"24": {
 		title: "<h1>canonicity court part 6</h1>",
 		content: '<img src="comics/canoncourt_6.png" title="PLACEHOLDER"/>'
-	}
+	},
 	"25": {
 		title: "<h1>canonicity court part 7</h1>",
 		content: '<img src="comics/canoncourt_7.png" title="And take your pseudo-sound-effects too!"/>'
-	}
+	},
 	"26": {
 		title: "<h1>developing plot or something</h1>",
 		content: '<img src="comics/qxlkbh26.png" title="Grant Hill and all the other Grant people also signed off on this."/>'
-	}
+	},
 	"27": {
 		title: "<h1>lookalikes</h1>",
 		content: '<img src="comics/qxlkbh27.png" title=" If anyone else ever did a gag like this, don\'t tell us. We want to think this one\'s original. - Narrator"/>'
-	}
+	},
 
 
 
