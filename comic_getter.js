@@ -1,9 +1,6 @@
 let pg = getParamater("pg");
 
-const lastComic = "3";
 const firstComic = "1";
-
-if (pg === null) { pg = lastComic; }
 
 const pgData = {
 	"1": {
@@ -17,9 +14,53 @@ const pgData = {
 	"3": {
 		title: "<h1>weirdness - 1</h1>",
 		content: '<img src="comics/weirdness_1.png" title="you wouldn\'t believe it, but the narrator\'s actually narrating"/>'
+	},
+	"4": {
+		title: "<h1>weirdness - 2</h1>",
+		content: '<img src="comics/weirdness_2.png" title="early installment weirdness 2/commentary(you have believed it)"/>'
+	},
+	"5": {
+		title: "<h1>weirdness - 3</h1>",
+		content: '<img src="comics/weirdness_3.png" title="early installment weirdness 3/commentary(you are the narrator.)"/>'
+	},
+	"6": {
+		title: "<h1>weirdness - 4</h1>",
+		content: '<img src="comics/weirdness_4.png" title="early installment weirdness 4/commentary(the character has made a conscious choice to be depicted with color)"/>'
+	},
+	"7": {
+		title: "<h1>weirdness - 5</h1>",
+		content: '<img src="comics/weirdness_5.png" title="I\'m legitimately worried that fanservice-obsessed cueball is going to become a proper recurring character. I better do something about that."/>'
+	},
+	"8": {
+		title: "<h1>beat panels</h1>",
+		content: '<img src="comics/beatpanels.png" title="This is one of the few times I\'m actually going to copy-paste content twixt panels"/>'
+	},
+	"9": {
+		title: "<h1>title drop</h1>",
+		content: '<img src="comics/unknown.png" title="Rrrrollcredit-- we\'re not a movie, we can\'t get slack from Cinema Sins. And no, you can\'t hear how the doctor said qxlkbh, it\'s through text."/>'
+	},
+	"10": {
+		title: "<h1>qxlkbh title</h1>",
+		content: '<img src="comics/unknown2.png" title="Title text."/>'
+	},
+	"11": {
+		title: "<h1>killing off for real</h1>",
+		content: '<img src="comics/killing_off_for_real.png" title="and I was only one day from retiring :("/>'
+	},
+	"12": {
+		title: "<h1>the third author</h1>",
+		content: '<img src="comics/the-third-author.png" title="The arms are just giant space elevators. This in fact makes the puppets canonically bigger than the Earth"/>'
 	}
 };
 
+var _lastComic = 1;
+while (_lastComic + 1 in pgData) {
+	_lastComic = _lastComic + 1;
+}
+
+const lastComic = _lastComic.toString();
+
+if (pg === null) { pg = lastComic; }
 
 function writePage() {
 	if (!(pgData[pg] === undefined || pgData[pg] == null)) {
