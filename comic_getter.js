@@ -85,7 +85,7 @@ const pgData = {
 	},
 	"21": {
 		title: "<h1>canonicity court part 3</h1>",
-		content: '<img src="comics/canoncourt_3.png" title="this being nine panels long is totally not just so that I can steal the \"most panels in a comic\" record from andrew. - musija"/>'
+		content: '<img src="comics/canoncourt_3.png" title="this being nine panels long is totally not just so that I can steal the "most panels in a comic" record from andrew. - musija"/>'
 	},
 	"22": {
 		title: "<h1>canonicity court part 4</h1>",
@@ -110,6 +110,10 @@ const pgData = {
 	"27": {
 		title: "<h1>lookalikes</h1>",
 		content: '<img src="comics/qxlkbh27.png" title=" If anyone else ever did a gag like this, don\'t tell us. We want to think this one\'s original. - Narrator"/>'
+	},
+	"28": {
+		title: '<img src="comics/haha_i_found_my_way_into_the_title.png" title="Help I\'m stuck in a title text"/>',
+		content: ''
 	},
 
 
