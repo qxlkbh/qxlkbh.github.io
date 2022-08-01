@@ -14,6 +14,7 @@
   <div id="title"> {{ setup.title }} </div>
   <div id="topNav"> {{ dynamic.navbar }} </div>
   <div id="showComic"> {{ setup.content }} </div>
+  <div id="extra"> {{ getattr(setup, "extra", "") }} </div>
   <!-- <script src="comic_getter.js"></script> -->
 </body>
 
