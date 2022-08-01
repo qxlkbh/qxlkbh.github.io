@@ -30,6 +30,26 @@ const pgData = {
 	"7": {
 		title: "<h1>weirdness - 5</h1>",
 		content: '<img src="comics/weirdness_5.png" title="early installment weirdness 5/commentary()"/>'
+	},
+	"8": {
+		title: "<h1>beat panels</h1>",
+		content: '<img src="comics/beatpanels.png" title=""/>'
+	},
+	"9": {
+		title: "<h1>title drop</h1>",
+		content: '<img src="comics/unknown.png" title=""/>'
+	},
+	"10": {
+		title: "<h1>qxlkbh title</h1>",
+		content: '<img src="comics/unknown2.png" title=""/>'
+	},
+	"11": {
+		title: "<h1>killing off for real</h1>",
+		content: '<img src="comics/killing_off_for_real.png" title=""/>'
+	},
+	"12": {
+		title: "<h1>the third author</h1>",
+		content: '<img src="comics/the-third-author.png" title=""/>'
 	}
 };
 
