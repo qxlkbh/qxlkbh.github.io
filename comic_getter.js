@@ -93,11 +93,11 @@ const pgData = {
 	},
 	"23": {
 		title: "<h1>canonicity court part 5</h1>",
-		content: '<img src="comics/canoncourt_5.png" title="PLACEHOLDER"/>'
+		content: '<img src="comics/canoncourt_5.png" title="dandan: objection, hearsay"/>'
 	},
 	"24": {
 		title: "<h1>canonicity court part 6</h1>",
-		content: '<img src="comics/canoncourt_6.png" title="PLACEHOLDER"/>'
+		content: '<img src="comics/canoncourt_6.png" title="dandan thought that the alternative was frumious - dandan, probably"/>'
 	},
 	"25": {
 		title: "<h1>canonicity court part 7</h1>",
