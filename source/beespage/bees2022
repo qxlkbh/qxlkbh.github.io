@@ -2,7 +2,15 @@ title===
 fourth wall health bar
 content===
 {{ ##EXEC src=src.replace('"/house"','"/housebees"') }}
-2022/08/03
+
+<img src="comics/fourthwall.png" caption="It is plotting."></img><br>
+
+2022/08/03<br>
 <pre>[###############################################################################                   ]</pre><br>
+
+2022/08/04<br>
+<b>andrewthecoder</b> has dealt <b>-3</b> HP! </br>
+<pre>[############################################################################                      ]</pre><br>
+
 priority===
 10
