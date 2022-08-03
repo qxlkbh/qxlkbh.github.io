@@ -1,0 +1,42 @@
+title===
+heiroglyphs
+headers===
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+  integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+  integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      // customised options
+      // • auto-render specific keys, e.g.:
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      // • rendering keys, e.g.:
+      throwOnError: false
+    });
+  });
+</script>
+content===
+several cuneiform tablets have recently been discovered,<br>
+containing ancient heiroglyphs dating back to 3100 BC.<br>
+theologians have not reached a consensus what they mean.<br>
+perhaps you can find out. they are displayed below.
+
+<div>
+  <p> $\exists S\in V\to V,S^{-1}\in V\to V$<br>
+    $\forall x:S(x)=x\cup\{x\}$<br>
+    $\forall x:S^{-1}(x\cup\{x\})=x$<br>
+    $\exists x$<br>
+    $S^{-1}(x)=S(S(S(S(S(S(S(\{\})))))))$<br>
+    $S(x)=S(S(S(S(S(S(S(S(\{\}))))))))$
+  </p>
+</div>
+priority===
+11
