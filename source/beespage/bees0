@@ -6,6 +6,26 @@ seek and you shall find.
 <h2>beespage index</h2>
 <div id="beesindex">
   {{ glo.beespageindex }}
+  {{ ##EXEC src=src.replace('<a href','<a target="_blank" rel="noopener noreferrer" href') }}
 </div>
+<div style="display: none">
+<audio controls preload="auto" id="bees">
+  <source src="/beesaudio.mp3" type="audio/mp3">
+</audio>
+</div>
+<script>
+  let playAttempt = setInterval(() => {
+    document.getElementById('bees').play()
+      .then(() => {
+        clearInterval(playAttempt);
+      })
+      .catch((error) => {
+      });
+  }, 100);
+</script>
+<!-- <script>
+  var a = new Audio("/beesaudio2.mp3");
+  a.play();
+</script> -->
 priority===
 -1

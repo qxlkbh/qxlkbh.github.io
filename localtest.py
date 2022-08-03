@@ -1,3 +1,4 @@
+from flask import send_file
 from flask import Flask
 from markupsafe import escape
 
@@ -10,7 +11,7 @@ def index():
 
 
 def serve(fname):
-  if any(fname.endswith(x) for x in [".ico", ".png", ".webmanifest", ".html"]):
+  if any(fname.endswith(x) for x in [".ico", ".png", ".webmanifest", ".html", ".mp3"]):
     return app.send_static_file(f"{fname}")
   return app.send_static_file(f"{fname}.html")
 
