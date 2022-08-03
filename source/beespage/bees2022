@@ -1,0 +1,8 @@
+title===
+fourth wall health bar
+content===
+{{ ##EXEC src=src.replace('"/house"','"/housebees"') }}
+2022/08/03
+<pre>[###############################################################################                   ]</pre><br>
+priority===
+10
