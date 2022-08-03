@@ -8,6 +8,8 @@ seek and you shall find.
   {{ glo.beespageindex }}
   {{ ##EXEC src=src.replace('<a href','<a target="_blank" rel="noopener noreferrer" href') }}
 </div>
+<h2>Are these beauteous aural delights I percieve used with permission?</h2>
+Yes! They were written by musija and musija is fine with their use because they're one of the authors.
 <div style="display: none">
 <audio controls preload="auto" id="bees">
   <source src="/beesaudio.mp3" type="audio/mp3">
