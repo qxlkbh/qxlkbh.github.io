@@ -1,3 +1,5 @@
+<!-- to whoever forgot doctype html: ily-->
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta charset="utf-8">
+  {{ getattr(setup, "headers", "") }}
 </head>
 
 <body style="background-color:#fefefe;">
