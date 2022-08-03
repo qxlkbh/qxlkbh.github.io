@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <title>qxlkbh house</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,6 +16,11 @@
   welcome to the qxlkbh house page
   <h2><a href="/faq">faq</a></h2>
   <h2><a href="/1">read the first comic</a></h2>
+  <h2><a href="/{{ glo.lastComic }}">read the most recent comic</a></h2>
+
+  <div id="extra"> {{ getattr(setup, "anteprecedent", "") }} </div>
+
+
 </body>
 
 </html>

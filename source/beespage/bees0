@@ -1,0 +1,11 @@
+title===
+main beespage
+content===
+<h2>what is a beespage?</h2>
+seek and you shall find.
+<h2>beespage index</h2>
+<div id="beesindex">
+  {{ glo.beespageindex }}
+</div>
+priority===
+-1

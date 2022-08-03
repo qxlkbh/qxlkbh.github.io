@@ -15,25 +15,12 @@ _lc = 1
 while str(_lc + 1) in os.listdir("source/comic"):
   _lc += 1
 glo.lastComic = str(_lc)
-
 firstComic = 1
 lastComic = int(glo.lastComic)
 
 
 def path_to_comic(comic: int):
   return "/" + str(comic)
-
-
-def resolve(var: str, context: dict, fullpath: str):
-  ___ = Holder()
-  for i in context:
-    var = var.replace(i, "___." + i)
-    vars(___)[i] = context[i]
-  try:
-    return eval(var)
-  except Exception as e:
-    print("Warning: error %s on %s" % (str(e), fullpath))
-    return ""
 
 
 def substitute(template: str, setup: Holder, fullpath: str):
@@ -62,9 +49,31 @@ def substitute(template: str, setup: Holder, fullpath: str):
       pass
   context = {"glo": glo, "dynamic": dynamic, "setup": setup}
   src = open(f"templates/{template}").read()
-  s = re.finditer("\{\{ (.*?) \}\}", src)
-  for i in s:
-    src = src.replace(i.group(0), resolve(i.group(1), context, fullpath))
+  x = re.search("\{\{ (.*?) \}\}", src)
+  while x is not None:
+    var = x.group(1)
+    l, r = x.span()
+    ___ = Holder()
+    for i in context:
+      var = var.replace(i, "___." + i)
+      vars(___)[i] = context[i]
+    if var.startswith("##EXEC "):
+      src = src[:l] + src[r:]
+      try:
+        # very good practice.
+        ldct = dict(locals())
+        exec(var[7:], globals(), ldct)
+        src = ldct["src"]
+      except Exception as e:
+        print("Warning: execution error %s on %s" % (str(e), fullpath))
+    else:
+      d = ""
+      try:
+        d = eval(var)
+      except Exception as e:
+        print("Warning: evaluation error %s on %s" % (str(e), fullpath))
+      src = src[:l] + d + src[r:]
+    x = re.search("\{\{ (.*?) \}\}", src)
   return src
 
 
@@ -76,7 +85,9 @@ distutils.dir_util.copy_tree("bees", "build")
 distutils.dir_util.copy_tree("comics", "build/comics")
 shutil.copy("qxlkbh.png", "build")
 
-# substitue
+# readd
+li = []
+beespages = []
 for temp in os.listdir("source"):
   for sub in os.listdir(f"source/{temp}"):
     setup = Holder()
@@ -87,8 +98,19 @@ for temp in os.listdir("source"):
         vars(setup)[curvar] = ""
       else:
         vars(setup)[curvar] += i
-    comp = substitute(temp, setup, f"source/{temp}/{sub}")
-    open(f"build/{sub}.html", "w").write(comp)
+    li += [(f"build/{sub}.html", temp, setup, f"source/{temp}/{sub}")]
+    # good practice
+    if temp == "beespage":
+      beespages += [(int(setup.priority), sub, setup.title)]
+
+glo.beespageindex = "<ul>"
+for _, id, tit in beespages:
+  glo.beespageindex += f'<li><a href="/{id}">{id}: {tit}</a></li>'
+glo.beespageindex += "</ul>"
+
+# substitue
+for targ, temp, setup, fullpath in li:
+  open(targ, "w").write(substitute(temp, setup, fullpath))
 
 # print(glob.glob("source/*"))
 # print(os.listdir("source"))
