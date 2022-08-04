@@ -1,12 +1,6 @@
 <html>
 
 <head>
-  <title>if you are reading this, dandan will eat your hat</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SY2MP8PLC"></script>
   <script>
@@ -16,6 +10,12 @@
 
     gtag('config', 'G-0SY2MP8PLC');
   </script>
+
+  <title>if you are reading this, dandan will eat your hat</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <meta charset="utf-8">
   <meta http-equiv="refresh" content="1; url=/{{ glo.lastComic }}">
