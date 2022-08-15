@@ -3,50 +3,20 @@ import shutil
 import distutils.dir_util
 import re
 
+import ext
+
 
 class Holder():
   pass
 
 
 glo = Holder()
-
-# setupdynamic
-_lc = 1
-while str(_lc + 1) in os.listdir("source/comic"):
-  _lc += 1
-glo.lastComic = str(_lc)
-firstComic = 1
-lastComic = int(glo.lastComic)
-
-
-def path_to_comic(comic: int):
-  return "/" + str(comic)
+ext.init(glo)
 
 
 def substitute(template: str, setup: Holder, fullpath: str):
   dynamic = Holder()
-  if template == "comic":
-    dynamic.navbar = ""
-    pg = setup.pg
-    try:
-      pg = int(pg)
-      if pg == lastComic:
-        dynamic.navbar = '<a href="%s">&lt;</a> <a href="%s">&lt;&lt;</a>' % \
-          (path_to_comic(pg - 1), path_to_comic(firstComic))
-      elif pg == firstComic:
-        dynamic.navbar = '<a href="%s">&gt;&gt;</a> <a href="%s">&gt;</a>' % \
-          (path_to_comic(lastComic), path_to_comic(pg + 1))
-        # dynamic.navbar = '<a href="%s">&gt;&gt;</a> <a href="%s">&gt;</a>' % \
-        #   ("/index.html", path_to_comic(pg + 1))
-      else:
-        dynamic.navbar = '<a href="%s">&gt;&gt;</a> <a href="%s">&gt;</a> <a href="%s">&lt;</a> <a href="%s">&lt;&lt;</a>' %\
-          (path_to_comic(lastComic), path_to_comic(pg + 1),
-           path_to_comic(pg - 1), path_to_comic(firstComic))
-        # dynamic.navbar = '<a href="%s">&gt;&gt;</a> <a href="%s">&gt;</a> <a href="%s">&lt;</a> <a href="%s">&lt;&lt;</a>' %\
-        #   ("/index.html", path_to_comic(pg + 1),
-        #    path_to_comic(pg - 1), path_to_comic(firstComic))
-    except ValueError:
-      pass
+  ext.ppgsetup(template, setup, fullpath, dynamic)
   context = {"glo": glo, "dynamic": dynamic, "setup": setup}
   src = open(f"templates/{template}").read()
   x = re.search("\{\{ (.*?) \}\}", src)
@@ -65,13 +35,13 @@ def substitute(template: str, setup: Holder, fullpath: str):
         exec(var[7:], globals(), ldct)
         src = ldct["src"]
       except Exception as e:
-        print("Warning: execution error %s on %s" % (str(e), fullpath))
+        print("[warn] execution error %s on %s" % (str(e), fullpath))
     else:
       d = ""
       try:
         d = eval(var)
       except Exception as e:
-        print("Warning: evaluation error %s on %s" % (str(e), fullpath))
+        print("[warn] evaluation error %s on %s" % (str(e), fullpath))
       src = src[:l] + d + src[r:]
     x = re.search("\{\{ (.*?) \}\}", src)
   return src
@@ -87,7 +57,6 @@ shutil.copy("qxlkbh.png", "build")
 
 # readd
 li = []
-beespages = []
 for temp in os.listdir("source"):
   for sub in os.listdir(f"source/{temp}"):
     setup = Holder()
@@ -99,14 +68,9 @@ for temp in os.listdir("source"):
       else:
         vars(setup)[curvar] += i
     li += [(f"build/{sub}.html", temp, setup, f"source/{temp}/{sub}")]
-    # good practice
-    if temp == "beespage":
-      beespages += [(int(setup.priority), sub, setup.title)]
+    ext.addpage(temp, sub, setup)
 
-glo.beespageindex = "<ul>"
-for _, id, tit in beespages:
-  glo.beespageindex += f'<li><a href="/{id}">{id}: {tit}</a></li>'
-glo.beespageindex += "</ul>"
+ext.glosetup(glo)
 
 # substitue
 for targ, temp, setup, fullpath in li:
