@@ -28,7 +28,7 @@
   <h2><a href="/1">read the first comic</a></h2>
   <h2><a href="/{{ glo.lastComic }}">read the most recent comic</a></h2>
 
-  <h2><a href="/E1">read the second plotline</a></h2>
+  <h2><a href="/e1">read the extra comics</a></h2>
 
   <div id="extra"> {{ getattr(setup, "anteprecedent", "") }} </div>
 
