@@ -43,18 +43,18 @@ def ppgsetup(template: str, setup, fullpath: str, dynamic):
     nav = []
     if hasattr(setup, "nav"):
       nav = setup.nav.split("\n")
-    try:
-      pg = int(pg)
-      if "default" in nav:
+    if "default" in nav:
+      try:
+        pg = int(pg)
         if pg != lastComic:
           links += [("&gt;&gt;", path_to_comic(lastComic))]
           links += [("&gt;", path_to_comic(pg + 1))]
         if pg != firstComic:
           links += [("&lt;", path_to_comic(pg - 1))]
           links += [("&lt;&lt;", path_to_comic(firstComic))]
-    except ValueError as e:
-      print("[warn] default nav failed for %s: %s" % (fullpath, str(e)))
-      pass
+      except ValueError as e:
+        print("[warn] default nav failed for %s: %s" % (fullpath, str(e)))
+        pass
     try:
       for x in nav:
         if " --> " in x:
