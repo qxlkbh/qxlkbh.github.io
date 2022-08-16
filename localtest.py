@@ -5,6 +5,11 @@ from markupsafe import escape
 app = Flask(__name__, static_folder='build')
 
 
+@app.errorhandler(404)
+def page_not_found(e):
+  return app.send_static_file("404.html"), 404
+
+
 @app.route("/")
 def index():
   return app.send_static_file("index.html")
