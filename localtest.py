@@ -21,10 +21,8 @@ def index():
 
 
 def serve(fname):
-  print(fname)
   fname = fname.replace("&#39;", "'")
-  fname = fname.replace("&#39;", "'")
-  if any(fname.endswith(x) for x in [".ico", ".png", ".webmanifest", ".html", ".mp3"]):
+  if any(fname.endswith(x) for x in [".ico", ".png", ".webmanifest", ".html", ".mp3", ".js"]):
     return app.send_static_file(f"{fname}")
   return app.send_static_file(f"{fname}.html")
 

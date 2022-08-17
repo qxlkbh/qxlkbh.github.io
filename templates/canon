@@ -16,39 +16,44 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta charset="utf-8">
+  <title>{{ setup.pg }}</title>
 </head>
 
 <body style="background-color:#fefefe;">
   <a href="/house"> <img src="qxlkbh.png" /></a>
-  <p>the comic with a tagline that is this tagline</p>
   <h1>This is a <b>secret page</b></h1>
-  <p>There are, and will be, no other <b>secret pages</b>. This is the <u>only</u> one.</p>
 
-  <div id="original">
-    {{ ext.forceload.forceload("secret", alt="f12 to change this") }}
+  <div id="ciphertext" style="display: none;">
+    {{ setup.data }}
   </div>
 
-  <br>
+  <input id="key1" style="display: none;">
+  <input id="key2"><br>
 
-  <input id="key"><br>
-
-  <button onclick="do_encode()">encode</button><br>
+  <button onclick="ge()">get</button><br>
 
 
   <div id="result" style="word-wrap: break-word;">
 
   </div>
 
-  <!-- 
   <script type="text/javascript" src="/cipher.js"></script>
+
   <script type="text/javascript">
-    async function do_encode() {
-      var text = document.getElementById("original").innerHTML.trim();
-      var key = document.getElementById("key").value.trim();
-      var res = await encryptToBase64(text, key);
-      document.getElementById("result").innerHTML = res;
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
-  </script> -->
+    document.getElementById("key1").value = getParameterByName("key");
+    async function ge() {
+      var key = document.getElementById("key1").value + document.getElementById("key2").value;
+      inplacedecrypt(key);
+    }
+  </script>
 </body>
 
 </html>
