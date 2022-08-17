@@ -1,6 +1,7 @@
 import os
 
 import ext.navgen
+import ext.forceload
 
 firstComic = None
 lastComic = None
