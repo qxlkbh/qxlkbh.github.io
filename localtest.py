@@ -2,6 +2,11 @@ from flask import send_file
 from flask import Flask
 from markupsafe import escape
 
+
+import build
+print("build done")
+
+
 app = Flask(__name__, static_folder='build')
 
 
@@ -16,6 +21,8 @@ def index():
 
 
 def serve(fname):
+  print(fname)
+  fname = fname.replace("&#39;", "'")
   fname = fname.replace("&#39;", "'")
   if any(fname.endswith(x) for x in [".ico", ".png", ".webmanifest", ".html", ".mp3"]):
     return app.send_static_file(f"{fname}")

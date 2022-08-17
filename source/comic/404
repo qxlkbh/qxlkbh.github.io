@@ -1,8 +1,15 @@
 pg===
-404
+E6
 title===
 <h1>404 page</h1>
 content===
-<img src="comics/extra404.png" title="Does that count as a comic? Aw nuts." />
+<img src="comics/georgenotfound.png" title="Does that count as a comic? Aw nuts." />
 extra===
+<script>
+  if (!window.location.href.endsWith("/e6")) {
+    window.location.href = "/e6";
+  }
+</script>
 nav===
+&larr; --> e5
+&rarr; --> e7
