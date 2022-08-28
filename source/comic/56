@@ -1,12 +1,27 @@
 pg===
 56
 title===
-<h1>OBK Kubanulllh (guest comic by DALL·E)</h1>
+<h1>OBK Kubanuh (guest comic by DALL·E)</h1>
 content===
-<img src="comics/qxlkbh56.png"
-  title="redrawn by musi but basically the same as the original comic" />
+<img src="comics/qxlkbh56.png" title="redrawn by musi but basically the same as the original comic" />
 extra===
 
+<script defer>
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  }
+  var cnt = getRandomInt(2, 7);
+  if (cnt == 6) {
+    cnt = getRandomInt(2, 7);
+    if (cnt == 6)
+      cnt = getRandomInt(0, 100);
+  }
+  var s = "";
+  for (var i = 0; i < cnt; i += 1) { s = s + "l"; }
+  document.body.innerHTML = document.body.innerHTML.replace("Kubanuh", "Kubanu" + s + "h");
+</script>
 
 nav===
 default
