@@ -15,7 +15,7 @@ extra===
   var cnt = getRandomInt(2, 7);
   if (cnt == 6) {
     cnt = getRandomInt(2, 7);
-    if (cnt == 6)
+    if (cnt == 5)
       cnt = getRandomInt(0, 100);
   }
   var s = "";
