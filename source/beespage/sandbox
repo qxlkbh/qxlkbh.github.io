@@ -28,8 +28,8 @@ content===
 {{ ##EXEC src=src.replace('welcome to the (?) qxlkbh bees page','') }}
 
 <div>
-  <p>This is a page. It was not written by Olivier Messiaen.<br>
-  $\mathcal{TEST}$
+  <p>This is a page. It was not written by Olivier Messiaen. <sup>[<i>citation needed</i>]</sup> <br>
+    $\mathcal{TEST}$
   </p>
 </div>
 priority===
