@@ -1,0 +1,11 @@
+title===
+BEES FROM THE FUTURE
+content===
+(actually, by the time they reach you, the bees may not be from the future. This is due to relativistic effects and the
+passage of time.)
+<!-- what's priority do anyway ? -->
+{{ ##EXEC src=src.replace('<h1>beespage</h1>','') }}
+{{ ##EXEC src=src.replace('welcome to the (?) qxlkbh bees page','') }}
+
+priority===
+1000000000
