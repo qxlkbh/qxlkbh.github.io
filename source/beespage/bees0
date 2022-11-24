@@ -6,28 +6,30 @@ seek and you shall find.
 <h2>beespage index</h2>
 <div id="beesindex">
   {{ glo.beespageindex }}
-  {{ ##EXEC src=src.replace('<a href','<a target="_blank" rel="noopener noreferrer" href') }}
+  {{ ##EXEC src=src.replace('<a href','<a target="_blank" rel="noopener noreferrer" href') }} {{ ##EXEC 0>0 }}
 </div>
-<h2>Are these beauteous aural delights I percieve used with permission?</h2>
-Yes! They were written by musija and musija is fine with their use because they're one of the authors.
+<div id="auraldelights">
+</div>
 <div style="display: none">
-<audio controls preload="auto" id="bees">
-  <source src="/beesaudio.mp3" type="audio/mp3">
-</audio>
+  <audio controls preload="auto" id="bees">
+    <source src="/beesaudio.mp3" type="audio/mp3">
+  </audio>
 </div>
 <script>
-  let playAttempt = setInterval(() => {
-    document.getElementById('bees').play()
-      .then(() => {
-        clearInterval(playAttempt);
-      })
-      .catch((error) => {
-      });
-  }, 100);
+  if (Math.random() < 0.1) {
+    let playAttempt = setInterval(() => {
+      document.getElementById('bees').play()
+        .then(() => {
+          document.getElementById("auraldelights").innerHTML +=
+            "<h2>Are these beauteous aural delights I percieve used with permission?</h2>" +
+            "\n  Yes! They were written by musija and musija is fine with their use because" +
+            " they're one of the authors."
+          clearInterval(playAttempt);
+        })
+        .catch((error) => {
+        });
+    }, 100);
+  }
 </script>
-<!-- <script>
-  var a = new Audio("/beesaudio2.mp3");
-  a.play();
-</script> -->
 priority===
 -1

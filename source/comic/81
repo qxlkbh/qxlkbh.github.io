@@ -1,0 +1,24 @@
+pg===
+81
+title===
+<h1>Nomic Part 3</h1>
+content===
+<img src="comics/nomic-3.png"
+  title="musija's default state is facepalming tbh"/>
+extra===
+gameplay.
+
+<a href="/comics/nomic-3_SOCIAL_COMMENTARY_EDITION.png">View original version</a>
+
+<h2>RULES:</h2>
+(1) anyone can make a proposal<br>
+(2) a player may make a proposal by writing it down and showing it to the other players<br>
+(3) to vote for a proposal a player states that they are voting for it, and similarly for voting against a proposal or abstaining.<br>
+(4) if a proposal has more than two votes for it and nobody has stated that they abstain or are voting against it, it passes.<br>
+(5) if a proposal has more than two votes for it, fewer votes against than votes for, and has existed for at least 5 minutes, then it is passed<br>
+(6) passed rules are added to the ruleset.<br>
+(7) all other actions are disallowed by default<br>
+(8) a player may do at most one of voting for or against a proposal (or abstaining on it). However they can change their decision any time.<br>
+
+nav===
+default

@@ -25,6 +25,8 @@ def path_to_comic(comic: int):
 def addpage(temp, sub, setup):
   if temp == "beespage":
     global beespages
+    if int(setup.priority) >= 10**9:
+      return
     beespages += [(int(setup.priority), sub, setup.title)]
 
 
