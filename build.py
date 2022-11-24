@@ -61,7 +61,7 @@ for temp in os.listdir("source"):
   for sub in os.listdir(f"source/{temp}"):
     setup = Holder()
     curvar = ""
-    for i in open(f"source/{temp}/{sub}"):
+    for i in open(f"source/{temp}/{sub}", encoding="utf8"):
       if i.strip().endswith("==="):
         curvar = i.strip()[:-3]
         vars(setup)[curvar] = ""
@@ -74,7 +74,7 @@ ext.glosetup(glo)
 
 # substitue
 for targ, temp, setup, fullpath in li:
-  open(targ, "w").write(substitute(temp, setup, fullpath))
+  open(targ, "w", encoding="utf8").write(substitute(temp, setup, fullpath))
 
 # print(glob.glob("source/*"))
 # print(os.listdir("source"))
