@@ -5,11 +5,11 @@ title===
 content===
         <div id="comic"/>
 
-        <script src="http://threejs.org/build/three.min.js"></script>
+        <script src="https://threejs.org/build/three.min.js"></script>
 
-        <script src="http://threejs.org/examples/js/loaders/STLLoader.js"></script>
+        <script src="https://threejs.org/examples/js/loaders/STLLoader.js"></script>
 
-        <script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+        <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
 
         <script>
             var container, camera, scene, renderer, controls;
@@ -92,8 +92,6 @@ content===
                 camera.lookAt( scene.position );
 
                 renderer.render( scene, camera );
-                console.log("a");
-
             }
 
         </script>
