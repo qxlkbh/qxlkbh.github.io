@@ -1,0 +1,104 @@
+pg===
+s2pow2over3
+title===
+<h1>qxlkbh³</h1>
+content===
+        <div id="comic"/>
+
+        <script src="http://threejs.org/build/three.min.js"></script>
+
+        <script src="http://threejs.org/examples/js/loaders/STLLoader.js"></script>
+
+        <script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+        <script>
+            var container, camera, scene, renderer, controls;
+
+            init();
+            animate();
+
+            function init() {
+
+                container = document.getElementById("comic");
+
+                // renderer
+
+                renderer = new THREE.WebGLRenderer( { antialias: true } );
+                renderer.setSize( 480 , 360);
+                container.appendChild( renderer.domElement );
+                renderer.domElement.title="This took me way too long";
+
+                // scene
+
+                scene = new THREE.Scene();
+                scene.background = new THREE.Color( 0xffffff );
+
+                // object
+
+                var loader = new THREE.STLLoader();
+                loader.load( 'comics/qxlkbh.stl', function ( geometry ) {
+
+                    var material = new THREE.MeshPhongMaterial( { color: 0x000000 } );
+
+                    var mesh = new THREE.Mesh( geometry, material );
+
+                    mesh.rotation.x = -Math.PI / 2;
+                    scene.add( mesh );
+
+                } );
+
+                // camera
+
+                camera = new THREE.PerspectiveCamera( 35, 480 / 360, 1, 10000 );
+                camera.position.set( 20, 0, 0 );
+                scene.add( camera ); // required, because we are adding a light as a child of the camera
+
+                //controls
+                controls = new THREE.OrbitControls( camera, renderer.domElement );
+				controls.listenToKeyEvents( window ); // optional
+
+				//controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
+
+				controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+				controls.dampingFactor = 0.05;
+
+				controls.screenSpacePanning = false;
+
+				controls.minDistance = 20;
+				controls.maxDistance = 30;
+
+				controls.maxPolarAngle = Math.PI / 2;
+
+                // lights
+
+                scene.add( new THREE.AmbientLight( 0x222222 ) );
+
+                var light = new THREE.PointLight( 0xffffff, 0.8 );
+                camera.add( light );
+
+            }
+            function animate() {
+
+				requestAnimationFrame( animate );
+
+				controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
+
+				render();
+
+			}
+            
+            function render() {
+
+                camera.lookAt( scene.position );
+
+                renderer.render( scene, camera );
+                console.log("a");
+
+            }
+
+        </script>
+extra===
+<!--nav===default-->
+nav===
+??? --> /s1'25
+??? --> /s1'5
