@@ -22,9 +22,10 @@ def index():
 
 def serve(fname):
   fname = fname.replace("&#39;", "'")
-  if any(fname.endswith(x) for x in [".ico", ".png", ".webmanifest", ".html", ".mp3", ".js", ".stl"]):
+  try:
+    return app.send_static_file(f"{fname}.html")
+  except:
     return app.send_static_file(f"{fname}")
-  return app.send_static_file(f"{fname}.html")
 
 
 @app.route("/<name1>")
