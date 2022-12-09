@@ -22,7 +22,9 @@
 <body style="background-color:#fefefe;">
   <a href="/house"> <img src="qxlkbh.png" /></a>
   <p>the comic with a tagline that is this tagline</p>
-  <div id="title"> {{ setup.title }} </div>
+  <div id="title">
+    <h1> {{ setup.pg }} - {{ setup.title }} </h1>
+  </div>
   <div id="topNav"> {{ dynamic.navbar }} </div>
   <div id="showComic"> {{ setup.content }} </div>
   <div id="extra"> {{ getattr(setup, "extra", "") }} </div>
