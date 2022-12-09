@@ -1,10 +1,12 @@
 pg===
 thumbnail
 title===
-Thumbnail
+<h1>Thumbnail</h1>
 content===
 <img src="comics/thumbnail.png" title="FRENCH VIOLIN CLEF????!?" />
 extra===
 
 nav===
 GO TO HOUSEPAGE --> /house
+rawtitle===
+bees
