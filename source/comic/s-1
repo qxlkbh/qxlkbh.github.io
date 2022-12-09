@@ -1,7 +1,7 @@
 pg===
 -1
 title===
--1st comic
+<h1>-1st comic</h1>
 content===
 <img src="comics/negativeone.png" title="Wouldn't that be the ugliest stickman then?" />
 extra===
@@ -10,3 +10,5 @@ extra===
 nav===
 &rarr; --> /s0
 &larr; --> /s-2
+rawtitle===
+bees
