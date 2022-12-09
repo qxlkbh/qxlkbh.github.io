@@ -1,7 +1,7 @@
 pg===
 11^
 title===
-train tracks
+<h1>train tracks</h1>
 content===
 <img src="comics/traintracks.png" title="'I demand my $30.' wait where did you come from why are you wearing lc's hat" />
 extra===
@@ -9,3 +9,5 @@ extra===
 nav===
 &larr; --> 11
 &rarr; --> 12
+rawtitle===
+bees
