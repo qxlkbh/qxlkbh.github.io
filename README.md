@@ -24,7 +24,7 @@ Please stop reading this document now.
 
 ##### BUT if you scrolled here 
 
-#### statistical tests show that you are 99.69% non-sane
+#### statistical tests show that you are 99.69284597% non-sane
 
 ### therefore:
 
