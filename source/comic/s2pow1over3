@@ -3,98 +3,98 @@ s2pow2over3
 title===
 <h1>qxlkbh³</h1>
 content===
-        <div id="comic"/>
+<div id="comic" />
 
-        <script src="https://threejs.org/build/three.min.js"></script>
+<script src="https://threejs.org/build/three.min.js"></script>
 
-        <script src="https://threejs.org/examples/js/loaders/STLLoader.js"></script>
+<script src="https://qxlkbh.github.io/archive-1/STLLoader.js"></script>
 
-        <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+<script src="https://qxlkbh.github.io/archive-1/OrbitControls.js"></script>
 
-        <script>
-            var container, camera, scene, renderer, controls;
+<script>
+    var container, camera, scene, renderer, controls;
 
-            init();
-            animate();
+    init();
+    animate();
 
-            function init() {
+    function init() {
 
-                container = document.getElementById("comic");
+        container = document.getElementById("comic");
 
-                // renderer
+        // renderer
 
-                renderer = new THREE.WebGLRenderer( { antialias: true } );
-                renderer.setSize( 480 , 360);
-                container.appendChild( renderer.domElement );
-                renderer.domElement.title="This took me way too long";
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(480, 360);
+        container.appendChild(renderer.domElement);
+        renderer.domElement.title = "This took me way too long";
 
-                // scene
+        // scene
 
-                scene = new THREE.Scene();
-                scene.background = new THREE.Color( 0xffffff );
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xffffff);
 
-                // object
+        // object
 
-                var loader = new THREE.STLLoader();
-                loader.load( 'comics/qxlkbh.stl', function ( geometry ) {
+        var loader = new THREE.STLLoader();
+        loader.load('https://qxlkbh.github.io/archive-1/comics/qxlkbh.stl', function (geometry) {
 
-                    var material = new THREE.MeshPhongMaterial( { color: 0x000000 } );
+            var material = new THREE.MeshPhongMaterial({ color: 0x000000 });
 
-                    var mesh = new THREE.Mesh( geometry, material );
+            var mesh = new THREE.Mesh(geometry, material);
 
-                    mesh.rotation.x = -Math.PI / 2;
-                    scene.add( mesh );
+            mesh.rotation.x = -Math.PI / 2;
+            scene.add(mesh);
 
-                } );
+        });
 
-                // camera
+        // camera
 
-                camera = new THREE.PerspectiveCamera( 35, 480 / 360, 1, 10000 );
-                camera.position.set( 20, 0, 0 );
-                scene.add( camera ); // required, because we are adding a light as a child of the camera
+        camera = new THREE.PerspectiveCamera(35, 480 / 360, 1, 10000);
+        camera.position.set(20, 0, 0);
+        scene.add(camera); // required, because we are adding a light as a child of the camera
 
-                //controls
-                controls = new THREE.OrbitControls( camera, renderer.domElement );
-				controls.listenToKeyEvents( window ); // optional
+        //controls
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.listenToKeyEvents(window); // optional
 
-				//controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
+        //controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
 
-				controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
-				controls.dampingFactor = 0.05;
+        controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+        controls.dampingFactor = 0.05;
 
-				controls.screenSpacePanning = false;
+        controls.screenSpacePanning = false;
 
-				controls.minDistance = 20;
-				controls.maxDistance = 30;
+        controls.minDistance = 20;
+        controls.maxDistance = 30;
 
-				controls.maxPolarAngle = Math.PI / 2;
+        controls.maxPolarAngle = Math.PI / 2;
 
-                // lights
+        // lights
 
-                scene.add( new THREE.AmbientLight( 0x222222 ) );
+        scene.add(new THREE.AmbientLight(0x222222));
 
-                var light = new THREE.PointLight( 0xffffff, 0.8 );
-                camera.add( light );
+        var light = new THREE.PointLight(0xffffff, 0.8);
+        camera.add(light);
 
-            }
-            function animate() {
+    }
+    function animate() {
 
-				requestAnimationFrame( animate );
+        requestAnimationFrame(animate);
 
-				controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
+        controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
 
-				render();
+        render();
 
-			}
-            
-            function render() {
+    }
 
-                camera.lookAt( scene.position );
+    function render() {
 
-                renderer.render( scene, camera );
-            }
+        camera.lookAt(scene.position);
 
-        </script>
+        renderer.render(scene, camera);
+    }
+
+</script>
 extra===
 <!--nav===default-->
 nav===
