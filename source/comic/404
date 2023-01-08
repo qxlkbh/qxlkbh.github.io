@@ -3,7 +3,7 @@ E6
 title===
 404 page
 content===
-<img src="comics/georgenotfound.png" title="Does that count as a comic? Aw nuts." />
+<img src="/comics/georgenotfound.png" title="Does that count as a comic? Aw nuts." />
 extra===
 <script>
   if (!window.location.href.endsWith("/e6")) {
