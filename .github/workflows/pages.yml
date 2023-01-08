@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-      - run: python build.py
+      - run: python build.py -ll=3 -rc
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
