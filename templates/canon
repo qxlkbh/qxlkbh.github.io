@@ -20,7 +20,7 @@
 </head>
 
 <body style="background-color:#fefefe;">
-  <a href="/house"> <img src="qxlkbh.png" /></a>
+  <a href="/house"> <img src="/qxlkbh.png" /></a>
   <h1>This is a <b>secret page</b></h1>
 
   <div id="ciphertext" style="display: none;">

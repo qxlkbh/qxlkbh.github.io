@@ -31,17 +31,23 @@ except:
   json.dump(f, open("cack.json", "w"))
 
 wood.log("finished reading archives", l=2)
+logged = set()
 
 
 def resolve(x, fname):
+  global logged
   assert x[0] == "/"
   x = x[1:]
   if os.path.isfile(x) or os.path.isfile("bees/" + x):
-    wood.log(f"{fname}: {x} found locally")
+    if x not in logged:
+      wood.log(f"{fname}: {x} found locally")
+      logged.add(x)
     return x
   for i, j in zip(ARCHIVES, thing):
     if x in j:
-      wood.log(f"{fname}: {x} found in {i}")
+      if x not in logged:
+        wood.log(f"{fname}: {x} found in {i}")
+        logged.add(x)
       return i + x
   wood.log(f"{fname}: {x} does not exist", 1)
   return x
