@@ -3,7 +3,7 @@ fourth wall health bar
 content===
 {{ ##EXEC src=src.replace('"/house"','"/housebees"') }}
 
-<img src="comics/fourthwall.png" caption="It is plotting."></img><br>
+<img src="/comics/fourthwall.png" caption="It is plotting."></img><br>
 
 2022/08/03<br>
 <pre>[###############################################################################                   ]</pre><br>
