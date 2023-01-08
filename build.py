@@ -4,6 +4,16 @@ import distutils.dir_util
 import re
 
 import ext
+import ext.resource
+import ext.wood as wood
+
+
+import sys
+if "-h" in sys.argv:
+  print("why are you reading this")
+  print("-ll=<log level>")
+  print("-rc  refresh cack")
+  sys.exit(0)
 
 
 class Holder():
@@ -19,7 +29,8 @@ def substitute(template: str, setup: Holder, fullpath: str):
   ext.ppgsetup(template, setup, fullpath, dynamic)
   context = {"glo": glo, "dynamic": dynamic, "setup": setup}
   src = open(f"templates/{template}").read()
-  x = re.search("\{\{ (.*?) \}\}", src)
+  pat = re.compile("\{\{ (.*?) \}\}")
+  x = re.search(pat, src)
   while x is not None:
     var = x.group(1)
     l, r = x.span()
@@ -35,16 +46,16 @@ def substitute(template: str, setup: Holder, fullpath: str):
         exec(var[7:], globals(), ldct)
         src = ldct["src"]
       except Exception as e:
-        print("[warn] execution error %s on %s" % (str(e), fullpath))
+        wood.log("execution error %s on %s" % (str(e), fullpath), 1)
     else:
       d = ""
       try:
         d = eval(var)
       except Exception as e:
-        print("[warn] evaluation error %s on %s" % (str(e), fullpath))
+        wood.log("evaluation error %s on %s" % (str(e), fullpath), 1)
       src = src[:l] + d + src[r:]
-    x = re.search("\{\{ (.*?) \}\}", src)
-  return src
+    x = re.search(pat, src)
+  return ext.resource.subst(src, fname=fullpath)
 
 
 shutil.rmtree("build", ignore_errors=True)

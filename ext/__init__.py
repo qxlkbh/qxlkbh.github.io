@@ -2,6 +2,8 @@ import os
 
 import ext.navgen
 import ext.forceload
+import ext.wood as wood
+import ext.resource
 
 firstComic = None
 lastComic = None
@@ -56,7 +58,7 @@ def ppgsetup(template: str, setup, fullpath: str, dynamic):
           links += [("&lt;", path_to_comic(pg - 1))]
           links += [("&lt;&lt;", path_to_comic(firstComic))]
       except ValueError as e:
-        print("[warn] default nav failed for %s: %s" % (fullpath, str(e)))
+        wood.log("default nav failed for %s: %s" % (fullpath, str(e)), l=1)
         pass
     try:
       for x in nav:
@@ -64,6 +66,6 @@ def ppgsetup(template: str, setup, fullpath: str, dynamic):
           a, b = x.split(" --> ")
           links += [(a, b)]
     except ValueError:
-      print("[warn] custom nav failed for %s: %s" % (fullpath, str(e)))
+      wood.log("custom nav failed for %s: %s" % (fullpath, str(e)), l=1)
       pass
     dynamic.navbar = ext.navgen.gennav(links)
