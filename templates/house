@@ -29,6 +29,8 @@
   <h2><a href="/{{ glo.lastComic }}">read the most recent comic</a></h2>
 
   <h2><a href="/e1">read the extra comics</a></h2>
+  
+  <h2><a href="https://discord.gg/5BXRhCnvHq">join our discord</a></h2>
 
   <div id="extra"> {{ getattr(setup, "anteprecedent", "") }} </div>
 
