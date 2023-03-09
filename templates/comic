@@ -17,6 +17,18 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta charset="utf-8">
+  <style>
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 602px;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  </style>
 </head>
 
 <body style="background-color:#fefefe;">
@@ -27,7 +39,7 @@
     {{ setup.title }}
   </div>
   <div id="topNav"> {{ dynamic.navbar }} </div>
-  <div id="showComic"> {{ setup.content }} </div>
+  <div id="showComic" class="gallery"> <div> {{ setup.content }} </div> </div>
   <div id="extra"> {{ getattr(setup, "extra", "") }} </div>
   <!-- <script src="comic_getter.js"></script> -->
 </body>
