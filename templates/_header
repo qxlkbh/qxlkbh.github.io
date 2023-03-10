@@ -1,0 +1,46 @@
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SY2MP8PLC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0SY2MP8PLC');
+  </script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      if(document.cookie.search("mode=edgy") != -1) {
+        document.body.insertAdjacentHTML('afterbegin','<div class="edginess"></div>');
+      }
+    })
+  </script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta charset="utf-8">
+  <style>
+  .gallery {
+    width: 710px;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  body {
+    background-color: #fefefe;
+  }
+  .edginess { 
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    left: 0;
+    mix-blend-mode: difference;
+    pointer-events: none;
+  }
+  </style>

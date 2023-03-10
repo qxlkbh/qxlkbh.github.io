@@ -6,7 +6,7 @@ import re
 import ext
 import ext.resource
 import ext.wood as wood
-
+from ext import use
 
 import sys
 if "-h" in sys.argv:
@@ -69,6 +69,8 @@ shutil.copy("qxlkbh.png", "build")
 # readd
 li = []
 for temp in os.listdir("source"):
+  if temp[0] == '_':
+    wood.log("you aren't supposed to be using template %s" % temp, 1)
   for sub in os.listdir(f"source/{temp}"):
     setup = Holder()
     curvar = ""

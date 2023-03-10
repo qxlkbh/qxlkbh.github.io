@@ -10,6 +10,9 @@ lastComic = None
 beespages = []
 
 
+def use(fname):
+  return open("templates/"+fname,"r").read()
+
 def init(glo):
   global firstComic, lastComic
   _lc = 1

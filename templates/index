@@ -1,31 +1,17 @@
+<!-- to whoever forgot doctype html: ily^2-->
+<!DOCTYPE html>
 <html>
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SY2MP8PLC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-0SY2MP8PLC');
-  </script>
-
+  {{ use("_header") }}
   <title>if you are reading this, dandan will eat your hat</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <meta charset="utf-8">
   <meta http-equiv="refresh" content="1; url=/{{ glo.lastComic }}">
-
   <script>
     window.location.href = "/{{ glo.lastComic }}"
   </script>
 </head>
 
-<body style="background-color:#fefefe;">
+<body>
   <a href="/house"> <img src="/qxlkbh.png" /></a>
   <p>the comic with a tagline that is this tagline</p>
   <div id="title"></div>
