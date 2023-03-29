@@ -30,6 +30,10 @@
   </p>
   <h2>Q: I want to yell at you, how I can I contact you</h2>
   <p>A: it's probably easiest if you just create an issue <a href=https://github.com/qxlkbh/qxlkbh.github.io/issues>here</a> for now.</p> 
+  <h2>Q: Why "qxlkbh"? Why six letters? Why not just four, like xkcd?</h2>
+  <p>A: Well, you see, back in the day, the unicode standard was smaller, so individual characters were more valuable. But now the supply has increased (while demand has remained constant), so for a title to be worth the same amount, it must have more characters in it. Hence six characters.</p>
+  <h2>Q: Is anyone actually asking these questions?</h2>
+  <p>A: No, but musija thinks answering imaginary questions is funny. For some reason.</p>
 </body>
 
 </html>
