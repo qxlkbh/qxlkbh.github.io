@@ -1,0 +1,10 @@
+title===
+Random thoughts, a quasi-blog
+content===
+{{ ##EXEC src=src.replace('<h1>beespage</h1>','') }}
+{{ ##EXEC src=src.replace('welcome to the (?) qxlkbh bees page','') }}
+<div>
+This page is empty, so far. It might feature sorts of short essays/discussions on various topics later on.
+</div>
+priority===
+1000000000

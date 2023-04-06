@@ -1,0 +1,19 @@
+title===
+Really bad writing
+content===
+{{ ##EXEC src=src.replace('<h1>beespage</h1>','') }}
+{{ ##EXEC src=src.replace('welcome to the (?) qxlkbh bees page','') }}
+
+<div>
+  <p>It was a dark and stormy night. The lighting was poor, and the weather unfavorable, and it was after sunset</p>
+<br>
+<p>
+As he looked at her he knew at once that, like one of those red moon-shaped toy blocks that slots into a moon-shaped slot in a wooden box, like other differently colored blocks of different shapes already slotted into their own slots, for the purpose of amusing toddlers, she would make him complete
+</p>
+<br>
+<p>
+he looked at his young son's amateur writing, which neither rhymed nor scanned and was scrawled in garish violet with a crayon on a piece of construction paper.
+</p>
+</div>
+priority===
+1000000000
