@@ -1,7 +1,7 @@
 pg===
-1'25
+1.25
 title===
-<h1>five quarters</h1>
+five quarters
 content===
 <img src="/comics/five quarter.png"
   title="ok honestly though if you got here already you've probably got some of it figured out" />
@@ -9,5 +9,3 @@ extra===
 the title is technically, incorrect.
 nav===
 ??? --> /comics/five quarter.png
-rawtitle===
-bees

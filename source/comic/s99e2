@@ -1,11 +1,11 @@
 pg===
-99pe2
+99+2ε
 title===
-<h1>99+2epsilon</h1>
+99+2epsilon
 content===
 <img src="/comics/qxlkbh99eps2.png"
-  title="How did they find out how to fly? I thought we put the book on how on the top shelf? Did they use the book to fly before they learned how to fly?
-  No they just used a ladder" />
+  title="&quot;How did they find out how to fly? I thought we put the book on how on the top shelf? Did they use the book to fly before they learned how to fly?&quot;
+  &quot;No they just used a ladder&quot;" />
 extra===
 
 <!--nav===default-->
@@ -13,5 +13,3 @@ nav===
 &larr; --> s99_plus_e
 
 &rarr; --> s99'5
-rawtitle===
-bees
