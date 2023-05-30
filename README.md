@@ -10,6 +10,7 @@ Please stop reading this document now.
 ---
 #
 ---
+if you're seeing this document at https://qxlkbh.github.io/ please notify us on the discord
 #
 ---
 #
