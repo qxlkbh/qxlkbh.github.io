@@ -26,6 +26,8 @@
     width: 710px;
   }
   .gallery img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     width: 100%;
     height: auto;
   }
