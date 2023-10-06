@@ -30,18 +30,18 @@ content===
 <div>
   <p>Theorem. Let $n\in \mathbb{Z}_{+}$. Then in general to order-embed (with respect to the standard definition of $\le$ on $\mathbb{R}$) $n$ countably infinite ordinals $\alpha_{1},\dots,\alpha_{n}$ respectively into the sets $S_{1}\dots S_{n}$ of the $1$st through $n$th coordinates of the centers of a countable infinity of non-overlapping diameter-$1$ $m$-disks in $\mathbb{R}^{m}$, one needs $m=n+1$.<br>
 <br>
-<em>Proof.</em>First, demonstrate that $n+1$ dimensions suffice. Recall that any countably infinite ordinal $\alpha$ can order-embedded into $(\mathbb{R},\le)$. Therefore for each $\alpha_{i}$ pick a set $S_{i}\subset \mathbb{R}$ with order type $\alpha_{i}$. Let $f_{i}$ be a bijection $\mathbb{N}\rightarrow S_{i}$ when $1\le i \le n$. Now the set of $n+1$-disks centered at the points in $\{(f_{1}(k),f_{2}(k),\dots,f_{n}(k),k)|k\in \mathbb{N}\}$ satisfy the conditions of the theorem (they obviously embed the ordinals by construction, and any two of them are greater than distance $1$ from each other since any two differ in the last coordinate by at least $1$, and when $a\neq a'$ $f_{1}(a)\neq f_{1}(a')$ showing that the distances are strictly greater than $1$.)\\
+<em>Proof.</em> First, demonstrate that $n+1$ dimensions suffice. Recall that any countably infinite ordinal $\alpha$ can order-embedded into $(\mathbb{R},\le)$. Therefore for each $\alpha_{i}$ pick a set $S_{i}\subset \mathbb{R}$ with order type $\alpha_{i}$. Let $f_{i}$ be a bijection $\mathbb{N}\rightarrow S_{i}$ when $1\le i \le n$. Now the set of $n+1$-disks centered at the points in $\{(f_{1}(k),f_{2}(k),\dots,f_{n}(k),k)|k\in \mathbb{N}\}$ satisfy the conditions of the theorem (they obviously embed the ordinals by construction, and any two of them are greater than distance $1$ from each other since any two differ in the last coordinate by at least $1$, and when $a\neq a'$ $f_{1}(a)\neq f_{1}(a')$ showing that the distances are strictly greater than $1$.)\\
     Second, demonstrate that there is a choice of ordinals $\alpha_{1},\dots, \alpha_{n}$ such that $n$ dimensions are not enough. Choose $\alpha_{i}=\omega+1$ for all $i$. Now, let $x_{0,i}$ be the coordinate corresponding to the ordinal $0$ in the embedding for the $i$th position of the coordinates, and similarly let $x_{\omega,i}$ be the coordinate corresponding to the ordinal $\omega$ in the embedding for the $i$th position of the coordinates. Now all the $n$-disks' centers are within the region $\{(x_{1},\dots,x_{n})|x_{0,i}\le x_{i}\le x_{\omega,i}\}$. However, this region has finite volume $\prod_{i=1}^{n} (x_{0,i}-x_{\omega,i})$, insufficient to accommodate the centers of a countable infinity of non-overlapping $n$-disks. This is a contradiction, so $n$ dimensions do not in general suffice.
     QED.<br>
 <br>
 <a href="/e13">cool, take me back to the extra that mentioned this theorem</a>
 </p>
 <script> 
-for(var x=0;x<=100;x++){ 
+for(var x=0;x<=1000;x++){ 
 document.write("<br>") 
 } 
 </script> 
-<marquee>marquee</marquee>
+<marquee Scrolldelay=137>marquee</marquee>
 </div>
 priority===
 1000000000
