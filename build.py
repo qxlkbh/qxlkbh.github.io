@@ -1,6 +1,5 @@
 import os
 import shutil
-import distutils.dir_util
 import re
 
 import ext
@@ -59,11 +58,10 @@ def substitute(template: str, setup: Holder, fullpath: str):
 
 
 shutil.rmtree("build", ignore_errors=True)
-os.mkdir("build")
 
 # bees
-distutils.dir_util.copy_tree("bees", "build")
-distutils.dir_util.copy_tree("comics", "build/comics")
+shutil.copytree("bees", "build")
+shutil.copytree("comics", "build/comics")
 shutil.copy("qxlkbh.png", "build")
 
 # readd
