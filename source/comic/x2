@@ -1,14 +1,15 @@
 pg===
 x2
 title===
-3d: part 2
+guest comic: No, it's not a reference
 content===
-<img src="/comics/FORTY7OUT qxlkbh comic 2.png"/>
+<img src="/comics/FORTY7OUT qxlkbh comic 2.png" title = "maybe a little bit"/>
 extra===
-Credit: FORTY7OUT
+<p>This is a guest plotline by FORTY7OUT.</p>
+<!-- default nav-->
 nav===
 tags===
 qxlkbh
 forty7out
 date===
-20230722
+20231122
