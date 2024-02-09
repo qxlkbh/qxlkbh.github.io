@@ -17,6 +17,8 @@
   <div id="topNav"> {{ dynamic.navbar }} </div>
   <div id="showComic" class="gallery"> {{ setup.content }} </div>
   <div id="extra"> {{ getattr(setup, "extra", "") }} </div>
+  <h2>transcript</h2>
+  <div id="transcription"> {{ getattr(setup, "transcription", "") }} </div>
 </body>
 
 </html>
